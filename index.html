@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ONG MarAzul - Há dez anos lutando contra a ameaça da poluição dos mares e das praias do Brasil.">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- links dos css -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- link do bootstrap para os icones-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>ONG MarAzul</title>
+</head>
+<body>
+    <header class="menu-nav__container" id="top__site"> <!-- a id serve para estilizar a nav em outras páginas-->
+        <nav class="menu__navigation">
+            <a href="#" rel="">
+                <img src="midia/logo.png" alt="Logo simbólica da ONG MarAzul - Transformando mares, inspirando vidas">
+            </a>
+            <ul>
+                <li><a href="index.html" title="Ir para a página inicial">Início</a></li>
+                <li><a href="institucional.html" rel="next" title="Ir para página sobre nós">Sobre nós</a></li>
+                <li><a href="#contact__form" title="Ir para o formulário">Participe</a></li>
+                <li><a href="#contact__form" title="Ir para o formulário">Contato</a></li>
+            </ul>
+            <button type="button"><a href="https://www.catarse.me/" title="Ir para o Catarse" target="_blank">Doações</a></button>
+        </nav>        
+    </header>
+
+    <div class="hero__img">
+        <h1>Cerca de 8 milhões de toneladas de lixo são jogadas no mar todos os anos, podendo matar mais de 1 milhão de espécies de animais.</h1>
+    </div>
+
+    <section class="about__container">
+        <h2>Transformando mares, inspirando vidas</h2>
+        <div class="about__content__container">
+            <div class="about__text__content">
+                <p>Há uma década, a Marazul dedica-se incansavelmente à preservação dos oceanos,
+                enfrentando a ameaça da poluição costeira e promovendo a educação ambiental.
+                Ao longo desses anos, nossos projetos têm sido faróis de esperança, transformando a
+                realidade das praias em narrativas de mudança.</p>
+                <p>Desde o início, nossos Programas Educativos iluminam mentes, alcançando <strong>mais de 10.000
+                participantes em oito anos</strong>. Cada aula é uma semente de mudança, florescendo em consciência ambiental.
+                <p>Nosso compromisso com a Limpeza de Praias vai além da remoção de resíduos. <strong>Já retiramos mais
+                de 2 toneladas de lixo</strong>, devolvendo à natureza 10 km de praias limpas. Esta ação não apenas restaura habitats
+                marinhos, mas também protege diretamente 10 espécies ameaçadas.</p>
+                <p>A Marazul não é apenas uma organização, é um convite para fazer parte de uma transformação. Convidamos você
+                a se juntar a nós nessa jornada de impacto ambiental. Descubra mais sobre como cada pequena ação contribui para
+                grandes mudanças.</p>
+            </div>
+            <div class="about__img__container">
+                <picture>
+                    <source media="(max-width:600px)" srcset="midia/about-mobile.png" type="image/png" alt="Uma pessoa sem identificação retirando uma garrafa plástica da areia de uma praia.">
+                    <source media="(max-width: 760px)" srcset="midia/about-tablet.png" type="image/png" alt="Uma pessoa sem identificação retirando uma garrafa plástica da areia de uma praia.">
+                    <img src="midia/about-desktop.png" alt="Uma pessoa sem identificação retirando uma garrafa plástica da areia de uma praia.">
+                </picture>
+            </div>
+        </div>
+        <section class="cta__about">
+            <button class="btn__about__primary"><a href="#contact__form">Junte-se a nós <i class="bi bi-chevron-compact-right"></i></a></button>
+            <span>ou</span>
+            <button class="btn__about__secondary"><a href="https://www.catarse.me/" title="Ir para o Catarse">Faça uma doação <i class="bi bi-chevron-compact-right"></i></a></button>
+        </section> 
+    </section>  <!-- fim da seção sobre -->
+    
+    <div class="button__backTop">
+        <button type="button"><a href="#top__site" title="Voltar ao topo do site"><span>Voltar ao topo</span><i class="bi bi-chevron-compact-up"></i></a></button>
+    </div>
+
+    <div class="parallax firstone"></div>
+
+    <section class="projects__container">
+        <h2>Projetos em ação!</h2>
+        <section class="cards__container">
+            <div class="card__project">
+                <i class="bi bi-recycle"></i>
+                <h3>Multirão de Limpeza</h3>
+                <p>Mobilizamos voluntários para remover toneladas de resíduos das praias, 
+                restaurando a beleza natural e protegendo habitats marinhos.</p>
+                <button type="button"><a href="#contact__form" title="Ir para o formulário de contato">Participe você também!</a></button>
+            </div>
+
+            <div class="card__project">
+                <i class="bi bi-mortarboard"></i>
+                <h3>Educação Ambiental</h3>
+                <p>Palestras inspiradoras em parcerias com instituições públicas e privadas, 
+                conscientizando todas as gerações para cuidar do nosso meio ambiente.</p>
+                <button type="button"><a href="#contact__form" title="Ir para o formulário de contato">Participe você também!</a></button>
+            </div>
+        </section>
+    </section> <!-- fim da seção de projetos-->
+
+    
+    <div class="button__backTop">
+        <button type="button"><a href="#top__site" title="Voltar ao topo do site">Voltar ao topo <i class="bi bi-chevron-compact-up"></i></a></button>
+    </div>
+
+    <section class="contact__container">
+        <form class="form__contact"  id="contact__form">
+            <i class="bi bi-chat-square-heart"></i>
+            <h3>Conevrsa com propósito</h3>
+            <h4>Fale com a gente e faça a diferença!</h4>
+            <label for="contactInput__name" id="contactName__label" class="formContact__label">Informe seu nome:</label>
+            <input type="text" name="contact__name" id="contactInput__name" class="formContact__input" required>
+        
+            <label for="contactInput__email" id="contactEmail__label" class="formContact__label">Informe seu email:</label>
+            <input type="text" name="contact__email" id="contactInput__email" class="formContact__input" placeholder="exemplo@email.com" required>
+
+            <label for="contactInput__subject" id="contactSubject__label" class="formContact__label">O que você quer conevrsar?</label>
+            <textarea name="contact__subject" id="contactInput__subject" cols="0" rows="5" class="formContact__input"  required maxlength="800"></textarea>
+
+            <button type="submit">Enviar mensgem</button>        
+        </form>
+
+        <ul class="socialmedia__icons">
+            <li><a href="https://www.instagram.com" title="Link para abrir o instagram" target="_blank"><i class="bi bi-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com" title="Link para abrir o facebook" target="_blank"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="https://www.youtube.com" title="Link para abrir o youtube" target="_blank"><i class="bi bi-youtube"></i></a></li>
+            <li><a href="https://web.whatsapp.com" title="Link para abrir o whatsapp" target="_blank"><i class="bi bi-whatsapp"></i></a></li>
+
+        </ul>
+    </section>
+    
+    <div class="button__backTop">
+        <button type="button"><a href="#top__site" title="Voltar ao topo do site">Voltar ao topo <i class="bi bi-chevron-compact-up"></i></a></button>
+    </div>
+
+    <footer>
+        <section class="footer__links">
+            <ul>
+                <li class="footerLi__title">Institucional</li>
+                <li><a href="#top__site" title="Voltar ao topo do site">Início</a></li>
+                <li><a href="institucional.html" title="Página sobre a história da ong MarAzul" rel="next">Sobre a ONG</a></li>
+                <li><a href="#enroll_form">Seja um voluntário</a></li>
+                <li><a href="https://www.catarse.me/" title="Ir para o Catarse" target="_blank">Faça uma doação</a></li>
+            </ul>
+
+            <ul>
+                <li class="footerLi__title">Links</li>
+                <li><a href="#" target="_blank">Política de Privacidade</a></li>
+                <li><a href="#" target="_blank">Cookies</a></li>
+                <li><a href="#" target="_blank">Prestação de Contas</a></li>
+            </ul>
+
+            <ul>
+                <li class="footerLi__title">Contato</li>
+                <li><a href="https://www.facebook.com" title="Abrir o facebook" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com" title="Abrir o instagram" target="_blank">Instagram</a></li>
+                <li><a href="https://www.youtube.com" title="Abrir o youtube" target="_blank">Youtube</a></li>
+                <li><a href="https://web.whatsapp.com" title="Abrir o whatsapp" target="_blank">Whatsapp</a></li>
+                <li><a href="#contact__form">E-mail</a></li>
+            </ul>
+
+        </section>
+
+        <section class="developer">
+            <p>Desenvolvido com <span><i class="bi bi-suit-heart-fill"></i></span> por <a href="#" target="__blank" title="Abrir site do desenvolvedor">Cauã Lucca Guimarães</a></p>
+        </section>
+
+    </footer>
+</body>
+</html>

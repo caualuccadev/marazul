@@ -1,0 +1,355 @@
+/* estilizando o header */
+
+.hero__img{
+    background-image: radial-gradient(circle, rgba(18,18,18,.6), rgba(0,0,0,.7)), url('../midia/hero-bg-desktop.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 20rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+}
+
+.hero__img h1{
+    color: white;
+    filter: drop-shadow(1px 1px 1px rgba(0,0,0,.3));
+    text-align: center;
+    font-family: 'Poppins';
+}
+
+
+
+
+
+strong{
+    color: #089898;
+    font-weight: 550;
+}
+h2{
+    color: #089898;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+
+.about__container{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 2rem;
+    margin: 5rem 0;
+}
+
+.about__content__container{
+    display: flex;
+    flex-shrink: 1;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.about__text__content{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    text-indent: 1rem;
+    text-align: justify;
+    color: #121212;
+}
+
+.cta__about{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.cta__about span{
+    font-size: .8rem;
+    margin: 0 1rem;
+}
+
+.btn__about__primary{
+    background: #089898;
+    padding: .5rem 1rem;
+    color: white;
+    letter-spacing: .2px;
+    font-weight: 600;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 2px 2px 4px rgba(2, 55, 61, .4);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    gap: .5rem;  
+    cursor: pointer;
+}
+
+.btn__about__primary a{
+    color: white;
+    text-decoration: none;
+}
+
+.bi-chevron-compact-right{
+    font-size: 1.05rem;
+}
+
+.btn__about__secondary{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    background: none;
+    border: 1px solid #089898;
+    font-weight: 600;
+    letter-spacing: .2px;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.btn__about__secondary a{
+    color: #089898;
+    text-decoration: none;
+}
+
+.btn__about__primary:hover, .btn__about__secondary:hover{
+    transform: scale(1.05);
+    transition: .3s ease-in-out;
+}
+
+
+/* estilizando os parallax da pagina */
+.parallax{
+    max-width: 100%;
+    height: 15rem;
+    margin: 2rem auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.firstone{
+    background-image: url('../midia/parallax1-desktop.png');
+}
+
+
+/* estilizando a parte dos projetos */ 
+.projects__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+.cards__container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.projects__container h2{
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.card__project{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-image: linear-gradient(180deg, #089898, #025959 );
+    width: 18rem;
+    height: 20rem;
+    padding: 1rem;
+    margin: 0 2rem;
+    color: white;
+    box-shadow: 3px 3px 6px rgba(2, 55, 61, .4);
+    border-radius: 1rem;
+}
+
+.card__project > .bi{
+    font-size: 3rem;
+    text-align: center;
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,.2));
+}
+
+.card__project > button{
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-weight: 550;
+    letter-spacing: 1px;
+}
+
+.card__project > button a{
+    color: white;
+    text-decoration: none;
+}
+
+.card__project:hover{
+    background: rgba(2, 55, 61, 1);
+}
+
+.card__project > button:hover{
+    transition: .4s;
+    transform: scale(1.04);
+}
+
+
+/* estilizando a seção de contato */
+
+.contact__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    padding: 1rem 0;
+    background-image: radial-gradient(circle, rgba(18,18,18,.3), rgba(0,0,0,.4)), url(../midia/bg_contato-desktop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bi-chat-square-heart{
+    display: block;
+    font-size: 3rem;
+    color: #CAEBEB;
+    text-align: center;
+}
+
+.form__contact{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    padding: 2rem;
+    background: rgba(2, 55, 61, .7);
+    backdrop-filter: blur(.5rem);
+    color: white;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 3px rgba(0,0,0,.2);
+    
+}
+
+.form__contact h3{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: .3rem;
+}
+
+.form__contact h4{
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.formContact__label{
+    font-size: .85rem;
+    margin-bottom: .2rem;
+}
+
+.formContact__input{
+    border: 1px solid #CAEBEB;
+    border-radius: .5rem;
+    padding: .25rem;
+    margin-bottom: .8rem;
+}
+
+#contactInput__subject{
+    resize: none;
+    overflow-y: auto;
+}
+
+.form__contact button{
+    background: #CAEBEB;
+    color: #1e1e1e;
+    font-weight: 550;
+    border: none;
+    border-radius: .5rem;
+    padding: .5rem .5rem;
+    cursor: pointer;
+}
+
+.form__contact button:hover{
+    background: none;
+    color: #089898;
+    border: 1px solid #089898;
+    transition: .4s ease-in;
+}
+
+.socialmedia__icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    backdrop-filter: blur(.5rem);
+    padding: 1rem;
+
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+
+}
+
+.socialmedia__icons{
+    background: rgba(2, 55, 61, .7);
+    color: white;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+.socialmedia__icons .bi{
+    font-size: 2rem;
+    color: white;
+    padding: 0 .5rem;
+    border-radius: 1rem;
+    stroke: 1px solid white;
+    margin: 1rem 0;
+    background: transparent;
+    
+}
+
+.bi-instagram:hover{
+    border: 2px solid white;
+    background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    transition: .4s ease-in}
+
+
+.bi-facebook:hover{
+    border: 3px solid white;
+    background: #3b5998; 
+    transition: .4s ease-in}
+
+.bi-youtube:hover{
+    border: 3px solid white;
+    background: #c4302b;
+    transition: .4s ease-in}
+
+.bi-whatsapp:hover{
+    border: 3px solid white;
+    background: #25d366;
+    transition: .4s ease-in;
+}
+
+

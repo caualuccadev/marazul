@@ -1,0 +1,110 @@
+/* estilizando a intro - main (ajeitando o conteudo na tela), titulo e sumario */
+
+main{
+    padding: 1rem 2rem;
+}
+
+h1{
+    text-align: center;
+    padding: 1rem;
+    font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
+    font-size: .96rem;
+}
+
+h1 > span{
+    display: block;
+    color: #089898;
+    font-weight: 750;
+    font-family: 'Poppins';
+    font-size: 2rem;
+}
+
+.sumario{
+    margin: 2rem, 0;
+    padding: 1rem 0;
+    border-bottom: 1px solid #dedede;
+
+}
+
+.sumario__title{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #121212;
+}
+
+.sumario li:not(.sumario__title){
+    text-indent: 1rem;
+    margin-bottom: .3rem;
+    font-size: .9rem;
+}
+
+.sumario a{
+    text-decoration: none;
+}
+
+
+/* estilizando a main */
+
+.article__container{
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 1rem;
+    color: #121212;
+}
+
+.article__container h2{
+    font-size: 1.25rem;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.article__container p{
+    text-indent: 1rem;
+    text-align: justify;
+}
+
+.team{
+    margin: 4rem 0 2rem 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.team h2{
+    text-align: center;
+}
+
+.cards__container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.team__card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.team__card img{
+    height: 12rem;
+    border: 4px solid #089898;
+    border-radius: 6rem;
+}
+
+.team__card p{
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.team__card span{
+    font-size: .8rem;
+}
