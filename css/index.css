@@ -176,6 +176,7 @@ h2{
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    background-color: var(--blue800);
 }
 
 .firstone{
