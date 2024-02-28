@@ -8,7 +8,7 @@ h1{
     text-align: center;
     padding: 1rem;
     font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
-    font-size: .96rem;
+    font-size: clamp(0.3rem, .5rem + 1vw, 1.3rem);
 }
 
 h1 > span{
@@ -16,26 +16,30 @@ h1 > span{
     color: #089898;
     font-weight: 750;
     font-family: 'Poppins';
-    font-size: 2rem;
+    font-size: clamp(0.5rem, 2rem + 1vw, 4rem);
+    text-align: center;
 }
 
 .sumario{
     margin: 2rem, 0;
     padding: 1rem 0;
     border-bottom: 1px solid #dedede;
+    display: flex;
+    flex: 1;
+    flex-grow: 1;
 
 }
 
 .sumario__title{
-    font-size: 1.2rem;
+    font-size: clamp(.7rem, .7rem + 1vw, 1.2rem);
     font-weight: 700;
     color: #121212;
 }
 
 .sumario li:not(.sumario__title){
-    text-indent: 1rem;
+    margin-left: .5rem;
     margin-bottom: .3rem;
-    font-size: .9rem;
+    font-size: clamp(.5rem, .5rem + 1vw, .9em);
 }
 
 .sumario a{
@@ -57,12 +61,13 @@ h1 > span{
 
 .article__container h2{
     font-size: 1.25rem;
+    font-size: clamp(.8rem, .8rem + 1vw, 1.25rem);
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
 .article__container p{
     text-indent: 1rem;
-    text-align: justify;
+    font-size: clamp(.6rem, .6rem + 1vw, 1rem);
 }
 
 .team{
@@ -107,4 +112,5 @@ h1 > span{
 
 .team__card span{
     font-size: .8rem;
+    text-align: center;
 }

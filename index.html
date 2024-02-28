@@ -7,27 +7,46 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
     <!-- links dos css -->
-    <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/mediaquery.css">
+    
 
     <!-- link do bootstrap para os icones-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- link do javascript-->
+    <script src="scripts/script.js" type="text/javascript" defer></script>
     <title>ONG MarAzul</title>
 </head>
 <body>
-    <header class="menu-nav__container" id="top__site"> <!-- a id serve para estilizar a nav em outras páginas-->
-        <nav class="menu__navigation">
-            <a href="#" rel="">
-                <img src="midia/logo.png" alt="Logo simbólica da ONG MarAzul - Transformando mares, inspirando vidas">
-            </a>
+    <header class="nav__container" id="top__site">
+        <aside class="brand__logo">
+            <a href="index.html" tabindex="1"><img src="midia/logo.png" type="image/png" alt="Logo da MarAzul. Você pode clicar nela para voltar a página inicial."></a>
+        </aside>
+
+        <section class="menu__navDesktop" aria-roledescription="navigation">
             <ul>
-                <li><a href="index.html" title="Ir para a página inicial">Início</a></li>
-                <li><a href="institucional.html" rel="next" title="Ir para página sobre nós">Sobre nós</a></li>
-                <li><a href="#contact__form" title="Ir para o formulário">Participe</a></li>
-                <li><a href="#contact__form" title="Ir para o formulário">Contato</a></li>
+                <li><a href="index.html" title="Página inicial" tabindex="2">Início</a></li>
+                <li><a href="institucional.html" title="Ir para página institucional" tabindex="2">Sobre</a></li>
+                <li><a href="#contact__form" title="Ir para o formulário" tabindex="2">Contato</a></li>
+                <li><a href="#contact__form" title="Ir para o formulário" tabindex="2">Doação</a></li>
             </ul>
-            <button type="button"><a href="https://www.catarse.me/" title="Ir para o Catarse" target="_blank">Doações</a></button>
-        </nav>        
+        </section>
+
+        <div class="mobile__iconOpener" id="mobile__menu__icon"><i class="bi bi-list"></i></div>
+        <section class="menu__mobile" id="menu__mobile">
+            <aside id="menu__iconCloser" class="menu__iconCloser"><i class="bi bi-x-circle"></i></aside>
+            <nav class="menu__mobileItems">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="institucional.html">Sobre</a></li>
+                    <li><a href="#contact__form">Contato</a></li>
+                    <li><a href="#contact__form">Doação</a></li>
+                </ul>
+            </nav>
+
+        </section>
     </header>
 
     <div class="hero__img">
@@ -54,20 +73,21 @@
             <div class="about__img__container">
                 <picture>
                     <source media="(max-width:600px)" srcset="midia/about-mobile.png" type="image/png" alt="Uma pessoa sem identificação retirando uma garrafa plástica da areia de uma praia.">
-                    <source media="(max-width: 760px)" srcset="midia/about-tablet.png" type="image/png" alt="Uma pessoa sem identificação retirando uma garrafa plástica da areia de uma praia.">
+                    <source media="(max-width: 901px)" srcset="midia/about-tablet.png" type="image/png" alt="Uma pessoa sem identificação retirando uma garrafa plástica da areia de uma praia.">
                     <img src="midia/about-desktop.png" alt="Uma pessoa sem identificação retirando uma garrafa plástica da areia de uma praia.">
                 </picture>
             </div>
         </div>
         <section class="cta__about">
-            <button class="btn__about__primary"><a href="#contact__form">Junte-se a nós <i class="bi bi-chevron-compact-right"></i></a></button>
+            <a href="#contact__form" title="Ir para o formulário"><button class="btn__about__primary">Junte-se a nós <i class="bi bi-chevron-compact-right"></i></button></a>
             <span>ou</span>
-            <button class="btn__about__secondary"><a href="https://www.catarse.me/" title="Ir para o Catarse">Faça uma doação <i class="bi bi-chevron-compact-right"></i></a></button>
+            <a href="https://www.catarse.me/" title="Ir para o Catarse" target="_blank"><button class="btn__about__secondary">Faça uma doação <i class="bi bi-chevron-compact-right"></i></button></a>
+           
         </section> 
     </section>  <!-- fim da seção sobre -->
     
     <div class="button__backTop">
-        <button type="button"><a href="#top__site" title="Voltar ao topo do site"><span>Voltar ao topo</span><i class="bi bi-chevron-compact-up"></i></a></button>
+        <a href="#top__site" title="Voltar ao topo do site"><button type="button"><span>Voltar ao topo</span><i class="bi bi-chevron-compact-up"></i></button></a>
     </div>
 
     <div class="parallax firstone"></div>
@@ -95,24 +115,26 @@
 
     
     <div class="button__backTop">
-        <button type="button"><a href="#top__site" title="Voltar ao topo do site">Voltar ao topo <i class="bi bi-chevron-compact-up"></i></a></button>
+        <a href="#top__site" title="Voltar ao topo do site"><button type="button"><span>Voltar ao topo</span><i class="bi bi-chevron-compact-up"></i></button></a>
     </div>
 
     <section class="contact__container">
         <form class="form__contact"  id="contact__form">
             <i class="bi bi-chat-square-heart"></i>
-            <h3>Conevrsa com propósito</h3>
+            <h3>Conversa com propósito</h3>
             <h4>Fale com a gente e faça a diferença!</h4>
             <label for="contactInput__name" id="contactName__label" class="formContact__label">Informe seu nome:</label>
-            <input type="text" name="contact__name" id="contactInput__name" class="formContact__input" required>
+            <input type="text" name="contact__name" id="contactInput__name" class="formContact__input" tabindex="0" required>
         
             <label for="contactInput__email" id="contactEmail__label" class="formContact__label">Informe seu email:</label>
-            <input type="text" name="contact__email" id="contactInput__email" class="formContact__input" placeholder="exemplo@email.com" required>
+            <input type="text" name="contact__email" id="contactInput__email" class="formContact__input" tabindex="0" placeholder="exemplo@email.com" required>
 
-            <label for="contactInput__subject" id="contactSubject__label" class="formContact__label">O que você quer conevrsar?</label>
-            <textarea name="contact__subject" id="contactInput__subject" cols="0" rows="5" class="formContact__input"  required maxlength="800"></textarea>
+            <label for="contactInput__subject" id="contactSubject__label" class="formContact__label">O que você quer conversar?</label>
+            <textarea name="contact__subject" id="contactInput__subject" cols="0" rows="5" class="formContact__input" tabindex="0" required maxlength="800"></textarea>
+            <span class="counter__msg"></span>
 
-            <button type="submit">Enviar mensgem</button>        
+
+            <button type="submit" tabindex="0">Enviar mensgem</button>        
         </form>
 
         <ul class="socialmedia__icons">
@@ -125,7 +147,7 @@
     </section>
     
     <div class="button__backTop">
-        <button type="button"><a href="#top__site" title="Voltar ao topo do site">Voltar ao topo <i class="bi bi-chevron-compact-up"></i></a></button>
+        <a href="#top__site" title="Voltar ao topo do site"><button type="button"><span>Voltar ao topo</span><i class="bi bi-chevron-compact-up"></i></button></a>
     </div>
 
     <footer>
@@ -134,15 +156,15 @@
                 <li class="footerLi__title">Institucional</li>
                 <li><a href="#top__site" title="Voltar ao topo do site">Início</a></li>
                 <li><a href="institucional.html" title="Página sobre a história da ong MarAzul" rel="next">Sobre a ONG</a></li>
-                <li><a href="#enroll_form">Seja um voluntário</a></li>
+                <li><a href="#contact__form">Seja um voluntário</a></li>
                 <li><a href="https://www.catarse.me/" title="Ir para o Catarse" target="_blank">Faça uma doação</a></li>
             </ul>
 
-            <ul>
+            <ul class="notFunctional__links">
                 <li class="footerLi__title">Links</li>
-                <li><a href="#" target="_blank">Política de Privacidade</a></li>
-                <li><a href="#" target="_blank">Cookies</a></li>
-                <li><a href="#" target="_blank">Prestação de Contas</a></li>
+                <li><a href="#" target="_blank" title="Não está funcionando" disable>Política de Privacidade</a></li>
+                <li><a href="#" target="_blank" title="Não está funcionando" disable>Cookies</a></li>
+                <li><a href="#" target="_blank" title="Não está funcionando" disable>Prestação de Contas</a></li>
             </ul>
 
             <ul>

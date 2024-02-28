@@ -6,28 +6,46 @@
     <meta name="description" content="ONG MarAzul - Há dez anos lutando contra a ameaça da poluição dos mares e das praias do Brasil.">
     
     <!-- links dos css -->
-    <link rel="stylesheet" href="css/global.css" type="text/css">
     <link rel="stylesheet" href="css/about.css" type="text/css">
+    <link rel="stylesheet" href="css/global.css" type="text/css">
+    <link rel="stylesheet" href="css/mediaquery.css">
 
     <!-- link do bootstrap para os icones-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     
+    <!-- link do javascript-->
+    <script src="scripts/script.js" type="text/javascript" defer></script>
+
     <title>ONG MarAzul - Nossa História</title>
 </head>
 <body>
-    <header class="menu-nav__container" id="top__site"> <!-- a id serve para estilizar a nav em outras páginas-->
-        <nav class="menu__navigation">
-            <a href="#" rel="">
-                <img src="midia/logo.png" alt="Logo simbólica da ONG MarAzul - Transformando mares, inspirando vidas">
-            </a>
+    <header class="nav__container" id="top__site">
+        <aside class="brand__logo">
+            <a href="index.html"><img src="midia/logo.png" type="image/png" alt="Logo da MarAzul. Você pode clicar nela para voltar a página inicial."></a>
+        </aside>
+
+        <section class="menu__navDesktop">
             <ul>
-                <li><a href="index.html" title="Ir para a página inicial">Início</a></li>
-                <li><a href="institucional.html" rel="next" title="Ir para página sobre nós">Sobre nós</a></li>
-                <li><a href="index.html#contact__form" title="Ir para o formulário">Participe</a></li>
-                <li><a href="index.html#contact__form" title="Ir para o formulário">Contato</a></li>
+                <li><a href="index.html">Início</a><span></span></li>
+                <li><a href="institucional.html">Sobre</a><span></span></li>
+                <li><a href="#contact__form">Contato</a><span></span></li>
+                <li><a href="#contact__form">Doação</a><span></span></li>
             </ul>
-            <button type="button"><a href="https://www.catarse.me/" title="Ir para o Catarse" target="_blank">Doações</a></button>
-        </nav>        
+        </section>
+
+        <div class="mobile__iconOpener" id="mobile__menu__icon"><i class="bi bi-list"></i></div>
+        <section class="menu__mobile" id="menu__mobile">
+            <aside id="menu__iconCloser" class="menu__iconCloser"><i class="bi bi-x-circle"></i></aside>
+            <nav class="menu__mobileItems">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="institucional.html">Sobre</a></li>
+                    <li><a href="#contact__form">Contato</a></li>
+                    <li><a href="#contact__form">Doação</a></li>
+                </ul>
+            </nav>
+
+        </section>
     </header>
 
     <main>
@@ -65,7 +83,7 @@
         </article>
 
         <div class="button__backTop">
-            <button type="button"><a href="#top__site" title="Voltar ao topo do site">Voltar ao topo <i class="bi bi-chevron-compact-up"></i></a></button>
+            <a href="#top__site" title="Voltar ao topo do site"><button type="button"><span>Voltar ao topo</span><i class="bi bi-chevron-compact-up"></i></button></a>
         </div>
 
         <article class="article__container">
@@ -86,7 +104,7 @@
         </article>
         
         <div class="button__backTop">
-            <button type="button"><a href="#top__site" title="Voltar ao topo do site">Voltar ao topo <i class="bi bi-chevron-compact-up"></i></a></button>
+            <a href="#top__site" title="Voltar ao topo do site"><button type="button"><span>Voltar ao topo</span><i class="bi bi-chevron-compact-up"></i></button></a>
         </div>
 
         <section class="team">
@@ -132,7 +150,7 @@
         </section>
         
         <div class="button__backTop">
-            <button type="button"><a href="#top__site" title="Voltar ao topo do site">Voltar ao topo <i class="bi bi-chevron-compact-up"></i></a></button>
+            <a href="#top__site" title="Voltar ao topo do site"><button type="button"><span>Voltar ao topo</span><i class="bi bi-chevron-compact-up"></i></button></a>
         </div>
     </main>
 
@@ -140,17 +158,17 @@
         <section class="footer__links">
             <ul>
                 <li class="footerLi__title">Institucional</li>
-                <li><a href="#top__site" title="Voltar ao topo do site">Início</a></li>
+                <li><a href="index.html" title="Voltar ao topo do site">Início</a></li>
                 <li><a href="institucional.html" title="Página sobre a história da ong MarAzul" rel="next">Sobre a ONG</a></li>
-                <li><a href="#enroll_form">Seja um voluntário</a></li>
+                <li><a href="index.html#contact__form">Seja um voluntário</a></li>
                 <li><a href="https://www.catarse.me/" title="Ir para o Catarse" target="_blank">Faça uma doação</a></li>
             </ul>
 
-            <ul>
+            <ul class="notFunctional__links">
                 <li class="footerLi__title">Links</li>
-                <li><a href="#" target="_blank">Política de Privacidade</a></li>
-                <li><a href="#" target="_blank">Cookies</a></li>
-                <li><a href="#" target="_blank">Prestação de Contas</a></li>
+                <li><a href="#"  title="Não está funcionando" disable>Política de Privacidade</a></li>
+                <li><a href="#"  title="Não está funcionando" disable>Cookies</a></li>
+                <li><a href="#"  title="Não está funcionando" disable>Prestação de Contas</a></li>
             </ul>
 
             <ul>
